@@ -14,6 +14,16 @@ no operator judgement, no prompt that nobody can audit.
     quote_of("ad-0042", "r-medical") -> "cures diabetes and replaces your medication"
     is_clear("ad-0042")       ->  False
 
+## Live on Studionet
+
+Contract `0x2055aCe23ace03A8Ec7FB5a8304c4323883DFcb5`, deployed with `promo-rules` / `40`.
+
+    ad-0001  banned phrase        -> BLOCKED   counts 1,0   no model call
+    ad-0002  rule with no phrases -> BLOCKED   counts 0,1   3 agree / 2 idle / 0 disagreements
+    ad-0003  clean text           -> CLEAR     counts 0,0
+
+Every transaction hash and the full read output are in `EVIDENCE.md`.
+
 ## Why this needs an Intelligent Contract
 
 Every publication channel runs on a rulebook: ad copy must not promise guaranteed
